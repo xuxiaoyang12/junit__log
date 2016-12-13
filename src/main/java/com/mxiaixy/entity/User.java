@@ -1,9 +1,11 @@
 package com.mxiaixy.entity;
 
+import java.io.Serializable;
+
 /**
  * Created by Mxia on 2016/12/12.
  */
-public class User {
+public class User implements Serializable{
 
     private Integer id;
     private String username;

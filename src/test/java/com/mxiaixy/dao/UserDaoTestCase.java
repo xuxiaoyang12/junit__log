@@ -37,6 +37,8 @@ public class UserDaoTestCase {
         UserDao userDao = new UserDao();
         List<User> userList = userDao.findAll();
 
-        assertEquals(2,userList.size());
+        assertEquals(1,userList.size());
     }
+
+
 }

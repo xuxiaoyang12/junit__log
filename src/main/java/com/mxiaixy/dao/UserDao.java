@@ -26,4 +26,8 @@ public class UserDao {
         String sql = "select * from t_user";
         return Dbhelp.query(sql,new BeanListHandler<User>(User.class));
     }
+    public void delById(Integer id){
+        String sql = "delete from t_user where id = ?";
+        Dbhelp.update(sql,id);
+    }
 }
